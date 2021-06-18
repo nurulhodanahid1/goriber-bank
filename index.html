@@ -116,13 +116,13 @@
         function getInputNumber(id){
             const Amount = document.getElementById(id).value;
             const Number = parseFloat(Amount);
-            return Number;
+            return Number;   // depositNumber & withdrawNumber 
         }
 
-        function updateSpanText(id, Number){
+        function updateSpanText(id, number){
             const current = document.getElementById(id).innerText;
             const currentNumber = parseFloat(current);
-            const total = Number + currentNumber;
+            const total = number + currentNumber;
             document.getElementById(id).innerText = total;
 
             // const current = document.getElementById(id).innerText;
